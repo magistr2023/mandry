@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мандруй Україною – контакти</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="На головну" width="80" height="80"></a>
+    <h1>Контакти</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="napryamky.html">Напрямки</a></li>
+      <li><a href="galereya.html">Галерея</a></li>
+      <li><a href="porady.html">Поради</a></li>
+      <li><a href="kontakty.html">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Замовити маршрут</h2>
+    <form>
+      <p>
+        <label for="imya">Ваше ім'я</label>
+        <input type="text" id="imya" name="imya" autofocus required>
+      </p>
+      <p>
+        <label for="mail">Електронна пошта</label>
+        <input type="email" id="mail" name="mail" required>
+      </p>
+      <p>
+        <label for="tel">Телефон</label>
+        <input type="tel" id="tel" name="tel">
+      </p>
+      <p>
+        <label for="napryamok">Напрямок</label>
+        <select id="napryamok" name="napryamok">
+          <option>Карпати</option>
+          <option>Море</option>
+          <option>Старі міста</option>
+          <option>Замки</option>
+          <option>Національні парки</option>
+        </select>
+      </p>
+      <p>
+        <label for="data">Дата виїзду</label>
+        <input type="date" id="data" name="data">
+      </p>
+      <p>
+        <label for="osib">Кількість осіб</label>
+        <input type="number" id="osib" name="osib" min="1" max="20" value="2">
+      </p>
+      <p>
+        Тип відпочинку:
+        <label><input type="radio" name="typ" value="aktyvnyy"> активний</label>
+        <label><input type="radio" name="typ" value="spokiynyy"> спокійний</label>
+      </p>
+      <p>
+        <label><input type="checkbox" name="transfer"> потрібен трансфер</label>
+      </p>
+      <p>
+        <label for="komentar">Побажання</label>
+        <textarea id="komentar" name="komentar" rows="4"></textarea>
+      </p>
+      <p>
+        <button type="submit">Надіслати заявку</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    © 2026 Мандруй Україною. Навчальний проєкт.
+  </footer>
+</body>
+</html>
